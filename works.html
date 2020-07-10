@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel='stylesheet' href='css/slick.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fadepage.js"></script>
+    <title>Anastasiya Grib -- Works</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__logo"><a href="index.html">@miymiyman</a></div>
+        <nav class="nav">
+            <div class="nav-mobile">
+                <input type="checkbox" id="checkbox" class="nav-mobile__checkbox">
+                <label for="checkbox" class="nav-mobile__btn">
+                    <div class="nav-mobile__icon"></div>
+                </label>
+                <div class="nav-mobile__container">
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item"><a href="#" class="nav-mobile__link active-link">Works</a></li>
+                        <li class="nav-mobile__item"><a href="index.html" class="nav-mobile__link ">About</a></li>
+                        <li class="nav-mobile__item"><a href="contacts.html" class="nav-mobile__link">Contacts</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link active-link" href="#">Works</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link " href="index.html">About</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="slider slider-works">
+            <figure class="works-item">
+                <div class="works-item__img-container"><img src="img/dom/dom_preview.jpg"></div>
+                <figcaption class="works-item__caption">
+
+                    <h2 class="caption__header">DOM 57/2</h2>
+
+                    <!-- <p class="caption__description">Design of the online store <a class="link__text" href="project/dom.html">DOM 57/2</a>
+                    </p> -->
+                    <a class="caption__link" href="project/dom.html">
+                        <img class="arrow arrow_works" src="img/arrow-s2.svg" alt="more info">
+                    </a>
+                </figcaption>
+            </figure>
+
+            <figure class="works-item">
+                <div class="works-item__img-container"> <img src="img/asagi/asagi_logo.jpg"></div>
+                <figcaption class="works-item__caption">
+                    <h2 class="caption__header">Asagi</h2>
+                    <!-- <p class="caption__description">I love an unusual make-up and interesting photo shoots</p> -->
+                    <a class="caption__link" href="project/asagi.html"><img class="arrow arrow_works"
+                            src="img/arrow-s2.svg" alt="more info"></a>
+                </figcaption>
+            </figure>
+
+            <figure class="works-item">
+                <div class="works-item__img-container"><img src="img/artemare/artemare_preview.jpg"></div>
+                <figcaption class="works-item__caption">
+                    <h2 class="caption__header">Artemare</h2>
+                    <!-- <p class="caption__description">Landing page </p> -->
+                    <a class="caption__link" href="project/artemare.html"><img class="arrow arrow_works"
+                            src="img/arrow-s2.svg" alt="more info"></a>
+                </figcaption>
+            </figure>
+
+            <figure class="works-item">
+                <div class="works-item__img-container"> <img src="img/social/social_lukoil.jpg"></div>
+                <figcaption class="works-item__caption">
+                    <h2 class="caption__header">Social Media</h2>
+                    <p class="caption__description">Сreating a visual style for instagram accounts</p>
+                    <a class="caption__link" href="project/social.html"><img class="arrow arrow_works"
+                            src="img/arrow-s2.svg" alt="more info"></a>
+                </figcaption>
+            </figure>
+
+            <figure class="works-item">
+                <div class="works-item__img-container"> <img src="img/tba/tba_main.jpg"></div>
+                <figcaption class="works-item__caption">
+                    <h2 class="caption__header">FBO Minsk</h2>
+                    <a class="caption__link" href="project/tba.html"><img class="arrow arrow_works"
+                            src="img/arrow-s2.svg" alt="more info"></a>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a class="link__social" href="https://www.linkedin.com/in/anastasiya-hryb-8640011b2/">linkedin</a>
+    </footer>
+
+    <div class="bg-rect bg-rect__work"></div>
+
+    <script src="js/slick.min.js"></script>
+    <script>
+        $('.slider-works').slick({
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            vertical: true,
+            verticalSwiping: true,
+            dots: true,
+            centerPadding: '60px',
+            prevArrow: '<div class="slick-prev"><svg class="slider-arrow" width="30" height="90" viewBox="0 0 30 90" fill="none" xmlns=http://www.w3.org/2000/svg"><path d="M2.17211 2L27.1721 45.3013L2 88.7019" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>',
+            nextArrow: '<div class="slick-next"><svg class="slider-arrow" width="30" height="90" viewBox="0 0 30 90" fill="none" xmlns=http://www.w3.org/2000/svg"><path d="M2.17211 2L27.1721 45.3013L2 88.7019" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>',
+            cssEase: 'cubic-bezier(0.86, 0, 0.07, 1)'
+        });
+    </script>
+
+</body>
+
+</html>

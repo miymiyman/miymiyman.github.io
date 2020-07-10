@@ -1,2 +1,2 @@
 # miymiyman.github.io
-Personal web-page
+personal web-page

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel='stylesheet' href='css/slick.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fadepage.js"></script>
+
+    <title>Anastasiya Grib Personal Web-Site</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__logo"><a href="index.html">@miymiyman</a></div>
+        <nav class="nav">
+            <div class="nav-mobile">
+                <input type="checkbox" id="checkbox" class="nav-mobile__checkbox">
+                <label for="checkbox" class="nav-mobile__btn">
+                    <div class="nav-mobile__icon"></div>
+                </label>
+                <div class="nav-mobile__container">
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item"><a href="works.html" class="nav-mobile__link">Works</a></li>
+                        <li class="nav-mobile__item"><a href="index.html" class="nav-mobile__link">About</a>
+                        </li>
+                        <li class="nav-mobile__item"><a href="#" class="nav-mobile__link active-link">Contacts</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="works.html">Works</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="index.html">About</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link active-link" href="#">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section section_form">
+            <div class="form_container">
+                <h2 class="form__description-h2">For Any Questions and Requests</h2>
+                <p class="form__description-text">If you have any suggestions, you can contact me using the form
+                    below.</p>
+                <form id="contact-form" action="//formspree.io/meqrrykl" method="POST">
+                    <div class="form-group">
+                        <label class="control-label" for="reply-email">Your Email:</label>
+                        <input class="form-control" type="email" name="reply-mail" placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="reply-name">Your Name:</label>
+                        <input class="form-control" type="text" name="reply-name" placeholder="e.g. Ann">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="reply-message">Message:</label>
+                        <textarea rows="5" class="form-control" type="text" name="reply-message"></textarea>
+                    </div>
+                    <button class="btn-submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <div class="bg-img"><img src="img/contacts.jpg" alt="contacts photo"></div>
+    </main>
+    <footer class="footer">
+        <a class="link__social" href="https://www.linkedin.com/in/anastasiya-hryb-8640011b2/">linkedin</a>
+    </footer>
+    <div class="bg-rect bg-rect__contacts"></div>
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>
