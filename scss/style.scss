@@ -267,7 +267,7 @@ textarea {
         background: #ffffff;
         left: 0;
         right: 0;
-        height: 110px;
+        height: 70px;
         bottom: 0;
         padding: 0 250px;
         display: flex;
@@ -670,9 +670,26 @@ textarea {
         :focus:after {
             opacity: 0.5;
             bottom: -2px;
-
         }
+    }
 
+    &__close {
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+        &:after {
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -5px;
+
+            height: 1px;
+            width: 100%;
+
+            background-color: #000000;
+        }
     }
 }
 
@@ -734,6 +751,7 @@ textarea {
         }
     }
 }
+
 
 .btn {
     &-submit {
@@ -1021,7 +1039,7 @@ textarea {
 
         &-navigation {
             padding: 0 70px;
-            height: 70px;
+            height: 60px;
         }
     }
 }
@@ -1136,7 +1154,7 @@ textarea {
     .project {
 
         &-navigation {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
         }
 
     }
