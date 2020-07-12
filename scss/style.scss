@@ -274,6 +274,8 @@ textarea {
         justify-content: space-between;
         align-items: center;
 
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+
     }
 
     &-gallery {
@@ -569,7 +571,7 @@ textarea {
             .works-item {
                 &__img-container {
                     img {
-                        filter: brightness(0.5);
+                        filter: brightness(0.3);
                         transition: filter ease-in-out 0.3s;
                     }
                 }
@@ -694,6 +696,12 @@ textarea {
 
             &__link {
                 display: block;
+
+                &:hover {
+                    >img {
+                        opacity: 1;
+                    }
+                }
             }
         }
 
@@ -1030,14 +1038,19 @@ textarea {
                     height: 450px;
 
                     &>figcaption {
-
                         position: absolute;
+                        bottom: 30px;
+                        top: 0;
 
-                        bottom: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
-                        width: 90%;
+                        width: 100%;
                         padding-right: 0;
                         margin-left: 0;
+
+                        background-color: rgba(0, 0, 0, 0.5);
                     }
                 }
 
@@ -1076,8 +1089,10 @@ textarea {
                 }
 
                 &__link {
-                    margin-left: 0;
+                    min-width: 360px;
+                    padding: 0 20px;
                 }
+
             }
         }
     }
@@ -1116,6 +1131,14 @@ textarea {
                 }
             }
         }
+    }
+
+    .project {
+
+        &-navigation {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
     }
 
     .btn {
@@ -1201,6 +1224,10 @@ textarea {
                 &__description {
                     margin-bottom: 10px;
                 }
+
+                &__link {
+                    min-width: auto;
+                }
             }
         }
     }
@@ -1215,7 +1242,8 @@ textarea {
             .slick {
                 &-slide {
                     >figcaption {
-                        bottom: 40px;
+                        bottom: 20px;
+                        justify-content: left;
                     }
                 }
             }

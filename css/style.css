@@ -327,6 +327,8 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-gallery {
@@ -648,8 +650,8 @@ textarea {
 }
 
 .slider-works .slick-slide .works-item__img-container img {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
   -webkit-transition: -webkit-filter ease-in-out 0.3s;
   transition: -webkit-filter ease-in-out 0.3s;
   transition: filter ease-in-out 0.3s;
@@ -757,6 +759,10 @@ textarea {
 
 .works-item__caption .caption__link {
   display: block;
+}
+
+.works-item__caption .caption__link:hover > img {
+  opacity: 1;
 }
 
 .works-item__img-container {
@@ -1182,10 +1188,21 @@ textarea {
   }
   .slider-works .slick-slide > figcaption {
     position: absolute;
-    bottom: 60px;
-    width: 90%;
+    bottom: 30px;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
     padding-right: 0;
     margin-left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .slider-works .slick-prev {
     left: 50%;
@@ -1208,7 +1225,8 @@ textarea {
     margin-bottom: 20px;
   }
   .works-item__caption .caption__link {
-    margin-left: 0;
+    min-width: 360px;
+    padding: 0 20px;
   }
   .section_about .about__description {
     -webkit-box-orient: vertical;
@@ -1231,6 +1249,10 @@ textarea {
   }
   .section_project .project__description {
     font-size: 14px;
+  }
+  .project-navigation {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
   .btn-submit {
     font-size: 18px;
@@ -1279,12 +1301,18 @@ textarea {
   .works-item__caption .caption__description {
     margin-bottom: 10px;
   }
+  .works-item__caption .caption__link {
+    min-width: auto;
+  }
   .slider-main {
     right: 0%;
     bottom: 0%;
   }
   .slider-works .slick-slide > figcaption {
-    bottom: 40px;
+    bottom: 20px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   .btn-submit {
     font-size: 16px;
