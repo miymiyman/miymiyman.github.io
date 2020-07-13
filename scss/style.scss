@@ -8,7 +8,6 @@ $light-brown-color: #ac8c76;
 
 @import "template/scrollbar.scss";
 
-
 .body {
     background: $bg-color;
     font-family: "Montserrat", sans-serif;
@@ -80,7 +79,7 @@ textarea {
             margin-right: 0;
         }
 
-        &>a {
+        & > a {
             color: $gray-color;
         }
     }
@@ -194,7 +193,7 @@ textarea {
         color: $bg-color;
 
         &:hover {
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             font-weight: 500;
         }
 
@@ -207,7 +206,7 @@ textarea {
     &__checkbox {
         display: none;
 
-        &:checked~ {
+        &:checked ~ {
             .nav-mobile {
                 &__container {
                     left: 0;
@@ -275,7 +274,6 @@ textarea {
         align-items: center;
 
         box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
-
     }
 
     &-gallery {
@@ -293,7 +291,7 @@ textarea {
                 flex: 1 1 200px;
                 flex-basis: calc(50% - 50px);
                 gap: 50px;
-                  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
 
                 &:not(:only-of-type) {
                     margin: 0 25px;
@@ -307,16 +305,19 @@ textarea {
                     }
                 }
 
-                .c-image {
-                    width: 100%;
-                    height: 100%;
-                    height: auto;
-                    object-fit: cover;
+                .c {
+                    &-image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    &-video {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
-
         }
-
     }
 }
 
@@ -340,7 +341,6 @@ textarea {
                 text-align: left;
                 margin-left: 38%;
                 margin-top: 40px;
-
             }
 
             &__description {
@@ -389,7 +389,6 @@ textarea {
                 }
             }
         }
-
     }
 
     &_project {
@@ -430,7 +429,7 @@ textarea {
     font-family: "Montserrat";
     font-weight: 200;
 
-    >a {
+    > a {
         &:not(:last-child) {
             padding-right: 40px;
         }
@@ -494,9 +493,19 @@ textarea {
                 top: 0;
                 left: 0;
                 background: rgb(0, 0, 0);
-                background: -webkit-radial-gradient(center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgb(0, 0, 0) 100%);
+                background: -webkit-radial-gradient(
+                    center,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 0) 30%,
+                    rgb(0, 0, 0) 100%
+                );
                 background: -moz-radial-gradient(center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgb(0, 0, 0) 100%);
-                background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgb(0, 0, 0) 100%);
+                background: radial-gradient(
+                    ellipse at center,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 0) 30%,
+                    rgb(0, 0, 0) 100%
+                );
                 opacity: 0.6;
             }
         }
@@ -525,7 +534,6 @@ textarea {
     align-items: center;
 
     .slick {
-
         &-prev,
         &-next {
             cursor: pointer;
@@ -548,7 +556,7 @@ textarea {
             top: 10%;
             transform: rotate(-90deg);
 
-            &>svg {
+            & > svg {
                 transform: scale(0.7);
             }
         }
@@ -557,7 +565,7 @@ textarea {
             bottom: 10%;
             transform: rotate(90deg);
 
-            &>svg {
+            & > svg {
                 transform: scale(0.7);
             }
         }
@@ -578,7 +586,7 @@ textarea {
                 }
             }
 
-            >figcaption {
+            > figcaption {
                 width: 45%;
                 opacity: 0;
                 transition: opacity ease-in-out 0.3s;
@@ -590,12 +598,11 @@ textarea {
                 &__img-container {
                     img {
                         filter: brightness(1);
-
                     }
                 }
             }
 
-            &>figcaption {
+            & > figcaption {
                 opacity: 1;
                 transition: opacity ease-in-out 0.3s;
             }
@@ -637,7 +644,6 @@ textarea {
     }
 }
 
-
 .link {
     &__text {
         font-weight: 200;
@@ -652,7 +658,6 @@ textarea {
     }
 
     &__social {
-
         &:after {
             content: "";
             display: block;
@@ -716,13 +721,12 @@ textarea {
                 display: block;
 
                 &:hover {
-                    >img {
+                    > img {
                         opacity: 1;
                     }
                 }
             }
         }
-
     }
 
     &__img-container {
@@ -734,8 +738,6 @@ textarea {
             width: 100%;
         }
     }
-
-
 }
 
 .arrow {
@@ -752,7 +754,6 @@ textarea {
         }
     }
 }
-
 
 .btn {
     &-submit {
@@ -810,7 +811,6 @@ textarea {
 @import "template/form.scss";
 
 @media screen and(max-width:1280px) {
-
     .section {
         &_project {
             padding: 75px 125px 100px;
@@ -829,7 +829,7 @@ textarea {
                 margin-right: 0;
             }
 
-            &>a {
+            & > a {
                 color: $gray-color;
             }
         }
@@ -888,7 +888,6 @@ textarea {
                     &__paragraph {
                         margin-bottom: 10px;
                     }
-
                 }
             }
         }
@@ -946,8 +945,7 @@ textarea {
             }
 
             &-current {
-
-                >figcaption {
+                > figcaption {
                     // margin-left: -40px;
                     z-index: 1;
                 }
@@ -989,7 +987,6 @@ textarea {
 @media screen and (max-width: 768px) {
     .section {
         &_about {
-
             .about {
                 &__h1 {
                     font-size: 16vw;
@@ -997,7 +994,6 @@ textarea {
             }
 
             .spec {
-
                 &-text {
                     max-width: 100%;
                     font-size: 16px;
@@ -1009,7 +1005,6 @@ textarea {
 
         &_project {
             padding: 35px 70px 70px;
-
 
             .project {
                 &__h1 {
@@ -1023,14 +1018,12 @@ textarea {
         }
     }
 
-
     .project {
         &-gallery {
             .row {
                 margin-bottom: 30px;
 
                 &-container {
-
                     &:not(:only-of-type) {
                         margin: 0 15px;
                     }
@@ -1046,7 +1039,6 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-
     .slider {
         &-works {
             padding-right: 0;
@@ -1056,7 +1048,7 @@ textarea {
                     flex-direction: column;
                     height: 450px;
 
-                    &>figcaption {
+                    & > figcaption {
                         position: absolute;
                         bottom: 30px;
                         top: 0;
@@ -1091,8 +1083,6 @@ textarea {
         }
 
         &__caption {
-
-
             .caption {
                 &__header {
                     margin-left: 0;
@@ -1111,7 +1101,6 @@ textarea {
                     min-width: 360px;
                     padding: 0 20px;
                 }
-
             }
         }
     }
@@ -1139,7 +1128,6 @@ textarea {
         &_project {
             padding: 35px 70px 70px;
 
-
             .project {
                 &__h1 {
                     font-size: 48px;
@@ -1153,11 +1141,9 @@ textarea {
     }
 
     .project {
-
         &-navigation {
             box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
         }
-
     }
 
     .btn {
@@ -1168,7 +1154,6 @@ textarea {
 }
 
 @media screen and (max-width: 425px) {
-
     .header {
         font-size: 14px;
 
@@ -1220,7 +1205,6 @@ textarea {
                 margin-bottom: 15px;
 
                 &-container {
-
                     &:not(:only-of-type) {
                         margin: 0 7.5px;
                     }
@@ -1260,7 +1244,7 @@ textarea {
         &-works {
             .slick {
                 &-slide {
-                    >figcaption {
+                    > figcaption {
                         bottom: 20px;
                         justify-content: left;
                     }
@@ -1268,8 +1252,6 @@ textarea {
             }
         }
     }
-
-
 
     .btn {
         &-submit {
@@ -1297,5 +1279,4 @@ textarea {
             }
         }
     }
-
 }

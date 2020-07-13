@@ -250,8 +250,8 @@ textarea {
 }
 
 .nav-mobile__link:hover {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   font-weight: 500;
 }
 
@@ -372,9 +372,13 @@ textarea {
 .project-gallery .row-container .c-image {
   width: 100%;
   height: 100%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.project-gallery .row-container .c-video {
+  width: 100%;
+  height: 100%;
 }
 
 .section {
@@ -1353,3 +1357,4 @@ textarea {
     line-height: 1.5;
   }
 }
+/*# sourceMappingURL=style.css.map */
