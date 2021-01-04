@@ -79,7 +79,7 @@ textarea {
             margin-right: 0;
         }
 
-        & > a {
+        &>a {
             color: $gray-color;
         }
     }
@@ -206,7 +206,7 @@ textarea {
     &__checkbox {
         display: none;
 
-        &:checked ~ {
+        &:checked~ {
             .nav-mobile {
                 &__container {
                     left: 0;
@@ -312,6 +312,7 @@ textarea {
                         height: auto;
                         object-fit: cover;
                     }
+
                     &-video {
                         width: 100%;
                         height: 100%;
@@ -351,7 +352,7 @@ textarea {
                 color: #ffffff;
                 justify-content: flex-end;
                 font-weight: 200;
-                margin-top: 40px;
+                margin-top: 40px;              
             }
         }
 
@@ -382,7 +383,7 @@ textarea {
                 line-height: 1.5;
 
                 &__paragraph {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
 
                     &:last-child {
                         margin-bottom: 0;
@@ -410,6 +411,20 @@ textarea {
                 color: $bg-color;
                 padding-left: 50px;
                 line-height: 1.5em;
+
+                .descr {
+                    &__paragraph
+                    {
+                        margin-bottom: 10px;
+                    }
+                    // &__list 
+                    // {
+
+                    // }
+                    &__item {
+                        padding-left: 20px;
+                    }
+                }
             }
         }
     }
@@ -430,7 +445,7 @@ textarea {
     font-family: "Montserrat";
     font-weight: 200;
 
-    > a {
+    >a {
         &:not(:last-child) {
             padding-right: 40px;
         }
@@ -494,19 +509,15 @@ textarea {
                 top: 0;
                 left: 0;
                 background: rgb(0, 0, 0);
-                background: -webkit-radial-gradient(
-                    center,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 0) 30%,
-                    rgb(0, 0, 0) 100%
-                );
+                background: -webkit-radial-gradient(center,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0) 30%,
+                        rgb(0, 0, 0) 100%);
                 background: -moz-radial-gradient(center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgb(0, 0, 0) 100%);
-                background: radial-gradient(
-                    ellipse at center,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 0) 30%,
-                    rgb(0, 0, 0) 100%
-                );
+                background: radial-gradient(ellipse at center,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0) 30%,
+                        rgb(0, 0, 0) 100%);
                 opacity: 0.6;
             }
         }
@@ -535,6 +546,7 @@ textarea {
     align-items: center;
 
     .slick {
+
         &-prev,
         &-next {
             cursor: pointer;
@@ -557,7 +569,7 @@ textarea {
             top: 10%;
             transform: rotate(-90deg);
 
-            & > svg {
+            &>svg {
                 transform: scale(0.7);
             }
         }
@@ -566,7 +578,7 @@ textarea {
             bottom: 10%;
             transform: rotate(90deg);
 
-            & > svg {
+            &>svg {
                 transform: scale(0.7);
             }
         }
@@ -587,7 +599,7 @@ textarea {
                 }
             }
 
-            > figcaption {
+            >figcaption {
                 width: 45%;
                 opacity: 0;
                 transition: opacity ease-in-out 0.3s;
@@ -603,7 +615,7 @@ textarea {
                 }
             }
 
-            & > figcaption {
+            &>figcaption {
                 opacity: 1;
                 transition: opacity ease-in-out 0.3s;
             }
@@ -722,7 +734,7 @@ textarea {
                 display: block;
 
                 &:hover {
-                    > img {
+                    >img {
                         opacity: 1;
                     }
                 }
@@ -830,7 +842,7 @@ textarea {
                 margin-right: 0;
             }
 
-            & > a {
+            &>a {
                 color: $gray-color;
             }
         }
@@ -946,7 +958,7 @@ textarea {
             }
 
             &-current {
-                > figcaption {
+                >figcaption {
                     // margin-left: -40px;
                     z-index: 1;
                 }
@@ -1049,7 +1061,7 @@ textarea {
                     flex-direction: column;
                     height: 450px;
 
-                    & > figcaption {
+                    &>figcaption {
                         position: absolute;
                         bottom: 30px;
                         top: 0;
@@ -1245,7 +1257,7 @@ textarea {
         &-works {
             .slick {
                 &-slide {
-                    > figcaption {
+                    >figcaption {
                         bottom: 20px;
                         justify-content: left;
                     }

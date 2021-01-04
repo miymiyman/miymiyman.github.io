@@ -464,7 +464,7 @@ textarea {
 }
 
 .section_about .spec-text__paragraph {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .section_about .spec-text__paragraph:last-child {
@@ -489,6 +489,14 @@ textarea {
   color: #171616;
   padding-left: 50px;
   line-height: 1.5em;
+}
+
+.section_project .project__description .descr__paragraph {
+  margin-bottom: 10px;
+}
+
+.section_project .project__description .descr__item {
+  padding-left: 20px;
 }
 
 .footer {
